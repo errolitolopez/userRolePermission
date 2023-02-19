@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry location="mysql-connector-java-5.1.49.jar"/>
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"/>
+
+        <commentGenerator>
+            <property name="suppressAllComments" value="false"/>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+
+        <jdbcConnection
+                driverClass="com.mysql.jdbc.Driver"
+                connectionURL="jdbc:mysql://localhost:3306/test?useSSL=false&amp;allowPublicKeyRetrieval=true"
+                userId="root"
+                password="123qwe">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.example.demo.userRolePermission.dao"
+                            targetProject="../userRolePermission-dal/src/main/java">
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.example.demo.userRolePermission.dao"
+                         targetProject="../userRolePermission-dal/src/main/resources"/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.demo.userRolePermission.dao"
+                             targetProject="../userRolePermission-dal/src/main/java"/>
+
+        <!--        <javaModelGenerator targetPackage="com.example.demo.userRolePermission.dao.ex"-->
+        <!--                            targetProject="../userRolePermission-dal/src/main/java">-->
+        <!--            <property name="trimStrings" value="true"/>-->
+        <!--        </javaModelGenerator>-->
+
+        <!--        <sqlMapGenerator targetPackage="com.example.demo.userRolePermission.dao.ex"-->
+        <!--                         targetProject="../userRolePermission-dal/src/main/resources"/>-->
+
+        <!--        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.demo.userRolePermission.dao.ex"-->
+        <!--                             targetProject="../userRolePermission-dal/src/main/java"/>-->
+
+        <table tableName="T_USER" domainObjectName="TUser">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="T_ROLE" domainObjectName="TRole">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="T_USER_ROLE" domainObjectName="TUserRole">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="T_PERMISSION" domainObjectName="TPermission">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="T_ROLE_PERMISSION" domainObjectName="TRolePermission">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+    </context>
+</generatorConfiguration>

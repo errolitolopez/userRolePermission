@@ -2,7 +2,7 @@ package com.example.demo.userRolePermission.service;
 
 import com.example.demo.userRolePermission.dao.TPermission;
 import com.example.demo.userRolePermission.domain.req.PermissionReq;
-import com.example.demo.userRolePermission.domain.req.QueryPermissionReq;
+import com.example.demo.userRolePermission.domain.req.query.QueryPermissionReq;
 import com.example.demo.userRolePermission.domain.rsp.PageModel;
 
 import java.util.List;

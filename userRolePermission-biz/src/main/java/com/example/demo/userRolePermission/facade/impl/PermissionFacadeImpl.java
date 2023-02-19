@@ -2,7 +2,7 @@ package com.example.demo.userRolePermission.facade.impl;
 
 import com.example.demo.userRolePermission.dao.TPermission;
 import com.example.demo.userRolePermission.domain.req.PermissionReq;
-import com.example.demo.userRolePermission.domain.req.QueryPermissionReq;
+import com.example.demo.userRolePermission.domain.req.query.QueryPermissionReq;
 import com.example.demo.userRolePermission.domain.rsp.PageModel;
 import com.example.demo.userRolePermission.domain.rsp.PermissionRsp;
 import com.example.demo.userRolePermission.domain.rsp.Response;

@@ -1,13 +1,13 @@
-package com.example.demo.userRolePermission.domain.req;
+package com.example.demo.userRolePermission.domain.req.query;
+
+import com.example.demo.userRolePermission.domain.req.QueryBaseReq;
 
 import java.util.Date;
 
-public class QueryRolePermissionReq extends QueryBaseReq {
+public class QueryRoleReq extends QueryBaseReq {
     private Long id;
 
-    private Long roleId;
-
-    private Long permissionId;
+    private String roleCode;
 
     private Short flag;
 
@@ -27,20 +27,12 @@ public class QueryRolePermissionReq extends QueryBaseReq {
         this.id = id;
     }
 
-    public Long getRoleId() {
-        return roleId;
+    public String getRoleCode() {
+        return roleCode;
     }
 
-    public void setRoleId(Long roleId) {
-        this.roleId = roleId;
-    }
-
-    public Long getPermissionId() {
-        return permissionId;
-    }
-
-    public void setPermissionId(Long permissionId) {
-        this.permissionId = permissionId;
+    public void setRoleCode(String roleCode) {
+        this.roleCode = roleCode;
     }
 
     public Short getFlag() {

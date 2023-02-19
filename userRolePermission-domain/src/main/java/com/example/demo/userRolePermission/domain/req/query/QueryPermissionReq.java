@@ -1,4 +1,6 @@
-package com.example.demo.userRolePermission.domain.req;
+package com.example.demo.userRolePermission.domain.req.query;
+
+import com.example.demo.userRolePermission.domain.req.QueryBaseReq;
 
 import java.util.Date;
 

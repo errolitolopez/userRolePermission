@@ -1,8 +1,8 @@
 package com.example.demo.userRolePermission.controller.impl;
 
 import com.example.demo.userRolePermission.controller.RoleController;
-import com.example.demo.userRolePermission.domain.req.QueryRoleReq;
 import com.example.demo.userRolePermission.domain.req.RoleReq;
+import com.example.demo.userRolePermission.domain.req.query.QueryRoleReq;
 import com.example.demo.userRolePermission.domain.rsp.PageModel;
 import com.example.demo.userRolePermission.domain.rsp.Response;
 import com.example.demo.userRolePermission.domain.rsp.RoleRsp;

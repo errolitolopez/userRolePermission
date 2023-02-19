@@ -1,13 +1,17 @@
-package com.example.demo.userRolePermission.domain.req;
+package com.example.demo.userRolePermission.domain.req.query;
+
+import com.example.demo.userRolePermission.domain.req.QueryBaseReq;
 
 import java.util.Date;
 
-public class QueryUserRoleReq extends QueryBaseReq {
+public class QueryUserReq extends QueryBaseReq {
     private Long id;
 
-    private Long userId;
+    private String username;
 
-    private Long roleId;
+    private String email;
+
+    private String password;
 
     private Short flag;
 
@@ -27,20 +31,28 @@ public class QueryUserRoleReq extends QueryBaseReq {
         this.id = id;
     }
 
-    public Long getUserId() {
-        return userId;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public Long getRoleId() {
-        return roleId;
+    public String getEmail() {
+        return email;
     }
 
-    public void setRoleId(Long roleId) {
-        this.roleId = roleId;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Short getFlag() {

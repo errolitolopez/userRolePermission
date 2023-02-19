@@ -1,7 +1,7 @@
 package com.example.demo.userRolePermission.facade;
 
-import com.example.demo.userRolePermission.domain.req.QueryUserRoleReq;
 import com.example.demo.userRolePermission.domain.req.UserRoleReq;
+import com.example.demo.userRolePermission.domain.req.query.QueryUserRoleReq;
 import com.example.demo.userRolePermission.domain.rsp.PageModel;
 import com.example.demo.userRolePermission.domain.rsp.Response;
 import com.example.demo.userRolePermission.domain.rsp.UserRoleRsp;

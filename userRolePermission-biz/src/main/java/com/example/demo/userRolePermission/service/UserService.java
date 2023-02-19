@@ -1,8 +1,8 @@
 package com.example.demo.userRolePermission.service;
 
 import com.example.demo.userRolePermission.dao.TUser;
-import com.example.demo.userRolePermission.domain.req.QueryUserReq;
 import com.example.demo.userRolePermission.domain.req.UserReq;
+import com.example.demo.userRolePermission.domain.req.query.QueryUserReq;
 import com.example.demo.userRolePermission.domain.rsp.PageModel;
 
 public interface UserService {
